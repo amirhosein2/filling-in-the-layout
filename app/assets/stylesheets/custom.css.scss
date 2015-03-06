@@ -3,7 +3,9 @@
 
 /* mixins, variables, etc. */
 
-$gray-medium-light: #eaeaea;
+$gray-medium-light: #049CDB;
+$black-medium-light: #ffffff;
+$red-medium-light: #9d261d;
 
 /* universal */
 
@@ -24,6 +26,11 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
+  background: $gray-medium-light
+}
+
+.red {
+  color: $red-medium-light;
 }
 
 /* typography */
@@ -45,7 +52,13 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: $gray;
+  a {
+    color:$gray-darker;
+    &:hover {
+      color: $gray;
+    }
+  }
 }
 
 p {
@@ -66,9 +79,22 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: $gray;
     text-decoration: none;
   }
+}
+
+#right{
+  color: white;
+  &:hover {
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
+.blue{
+  background: $gray-medium-light;
+  border-bottom: 1px solid $gray-medium-light;
 }
 
 /* footer */
